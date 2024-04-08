@@ -6,38 +6,20 @@
 }
 
 
-body{
+.body{
     background-color: #f0f0f0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.logo{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    height: 10vh;
-    gap: 20px;
-    background-color: #f4f4f4;
-    padding: 20px;
-
+    justify-content: space-evenly;
 }
-.portal{
 
-    flex: none;
-    margin-top: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    gap: 20px;
-    border: #090808;
-    border-radius: 20%;
-    padding: 10px;
-    position: relative;
-    top: 5px;
-    left:5px ;
-    
-    
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
 }
+
 
 
 .home{
@@ -47,48 +29,72 @@ body{
     height: 4vh;
     background-color: #f4f4f4;
 }
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4vh;
-    margin: 20px;
-    background-color: #f4f4f4;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+.about {
+    background-color: #000903; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
 }
+
+.about:hover {
+    background-color: #3b3e3b; 
+}
+
 .abouttext{
     text-align: center;
 }
-.college{
- display: flex;
- justify-content: center;
- align-items: center;
- margin: 20px;
- padding: auto;
 
+
+
+.join {
+    background-color: #00070f; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
 }
-.join{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding: auto;
-    text: #080808;
-    background-color: #f4f4f4;
-    gap: 20px;
+
+.join:hover {
+    background-color: #1a3d62; 
 }
-.joinbutton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding: auto;
-    text: #080808;
-    background-color: #f4f4f4;
-    gap: 20px;
+
+.portalbtn {
+    background-color: #0a0a0a; 
+    color: #eff2f5; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
 }
+
+.portalbtn:hover {
+    background-color: #56544f; 
+}
+.home {
+    background-color: #010810; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+.home:hover {
+    background-color: #192838; 
+}
+
+
 .card-container{
     display: flex;
     justify-content: center;
@@ -108,12 +114,8 @@ body{
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
-    overflow: hidden
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    gap: 20px;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
+    overflow: hidden;
+  
 }
 .card img{
     width: 100%;
@@ -142,4 +144,48 @@ body{
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
+}
+
+.abc {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+
+.abouttext {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #333; 
+    max-width: 500px; 
+}
+
+
+.college img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-left: 20px; 
+}
+
+@media screen and (max-width: 768px){
+
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card-container{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        gap: 50px;
+    }
+    
 }
